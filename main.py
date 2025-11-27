@@ -3,13 +3,13 @@ from fastapi import FastAPI, HTTPException
 app = FastAPI()
 
 # "מסד נתונים" בזיכרון
-books = []
+#books = []
 BOOKS = [
     {"id": 1, "title": "A Great Read", "author": "Alice"},
     {"id": 2, "title": "Code Secrets", "author": "Bob"},
     {"id": 3, "title": "The Third Way", "author": "Charlie"},
 ]
-counter = 1
+counter = 4
 
 @app.get("/books")
 def get_books():
